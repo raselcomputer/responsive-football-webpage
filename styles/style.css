@@ -15,6 +15,18 @@ section{
     width: 100%;
     background: #ebe8e8;
 }
+h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: #18191F;
+}
+p{
+    font-size: 16px;
+    color: #6C6C6C;
+    text-align: justify;
+}
 /* Header Area  */
 .header-area{
     width: 100%;
@@ -46,7 +58,7 @@ nav ul li a{
     padding-right: 16px;
 }
 .button{
-    width: 100px;
+    width: 120px;
     display: flex;
     align-items: center;
     background:#E02C6D;
@@ -93,11 +105,11 @@ nav ul li a{
     margin-left: 5px;
 }
 .icon i{
-    margin-left: 7px;
     color: #fff;
     width: 16px;
     height: 16px;
     margin-top: 8px;
+    margin-left: 7px;
 }
 .header-banner{
     flex-basis: 50%;
@@ -133,19 +145,41 @@ nav ul li a{
     transform: translateY(-10px);
     filter: grayscale(100);
 }
-.player-info h2{
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 16px;
-    margin-bottom: 10px;
-    color: #18191F;
-}
-.player-info p{
-    font-size: 16px;
-    color: #6C6C6C;
-    text-align: justify;
-}
 .player-image img{
     width: 100%;
     border-radius: 10px;
+}
+
+/* Highlights Area  */
+
+.highlights-info{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.highlights-title{
+    flex-basis: 45%;
+    padding: 20px;
+}
+.highlights-title p{
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.highlights-title .button:hover{
+    background: #E02C6D;
+}
+.title h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.highlights-banner{
+    flex-basis: 45%;
+}
+.highlights-banner img{
+    position: relative;
+    left: 80px;
+    top: 0;
+    width: 567px;
+    height: 427px;
 }
