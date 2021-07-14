@@ -54,8 +54,22 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #fff;
-    margin-right: 20px;
-    padding-right: 16px;
+    margin-right: 36px;
+    position: relative;
+    padding-bottom: 5px;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E02C6D;
+    transition: all .3s ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
 }
 .button{
     width: 120px;
@@ -131,7 +145,7 @@ nav ul li a{
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 27px;
+    grid-gap: 40px;
 }
 .player{
     background: #fff;
@@ -139,7 +153,7 @@ nav ul li a{
     height: 474px;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 4px 4px 5px 1px rgba(68, 67, 67, 0.1);
+    box-shadow: 1px 1px 3px 5px rgba(68, 67, 67, 0.1);
     transition: transform 0.7s ease, grayscale 0.7s ease;
 }
 .player:hover{
@@ -199,10 +213,18 @@ nav ul li a{
 }
 .social-icons ul li{
     display: inline-block;
+    margin-right: 14px;
 }
 .social-icons img{
     width: 32px;
     height: 32px;
+    cursor: pointer;
+    transition: transform 0.7s ease;
+}
+.social-icons img:hover{
+    transform: translateY(-7px);
+    color: #E02C6D;
+    
 }
 .footer .logo. img{
     width: 483px;
